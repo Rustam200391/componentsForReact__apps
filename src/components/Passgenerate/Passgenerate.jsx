@@ -19,7 +19,7 @@ const Passgenerate = () => {
   return (
     <div>
       <h2> Pass generate</h2>
-      <div className="password-generator">
+      <div className={style.password__generator}>
         <input type="text" value={password} readOnly />
         <button onClick={generatePassword}>Генерировать</button>
       </div>

@@ -1,4 +1,4 @@
-.password-generator {
+.password__generator {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6,7 +6,7 @@
   margin-top: 20px;
 }
 
-.password-generator input[type="text"] {
+.password__generator input[type="text"] {
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
@@ -16,7 +16,7 @@
   text-align: center;
 }
 
-.password-generator button {
+.password__generator button {
   padding: 10px 20px;
   font-size: 16px;
   background-color: #007bff;
@@ -26,6 +26,6 @@
   cursor: pointer;
 }
 
-.password-generator button:hover {
+.password__generator button:hover {
   background-color: #0056b3;
 }
