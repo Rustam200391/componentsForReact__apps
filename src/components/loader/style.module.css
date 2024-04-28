@@ -1,0 +1,57 @@
+.loader__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sniper__loader {
+  position: relative;
+  width: 100px;
+  height: 20px;
+  margin-bottom: 20px;
+}
+.sniper__bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  animation: progress 4s linear infinite;
+}
+@keyframes progress {
+  0% {
+    width: 0%;
+    background-color: #ff6600;
+  }
+  25% {
+    background-color: #ffff00;
+  }
+  50% {
+    background-color: #ffff00;
+  }
+  100% {
+    width: 100%;
+    background-color: #00ff00;
+  }
+}
+@keyframes changePercent {
+  0% {
+    content: "0%";
+  }
+  25% {
+    content: "25%";
+  }
+  50% {
+    content: "50%";
+  }
+  100% {
+    content: "100%";
+  }
+}
+.sniper__loader::after {
+  content: "0%";
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 50%;
+  transform: translateX(-50%);
+  animation: changePercent 4s linear infinite;
+}
